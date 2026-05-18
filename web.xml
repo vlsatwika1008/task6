@@ -1,0 +1,10 @@
+<web-app> 
+<servlet> 
+<servlet-name>Mobiledetails</servlet-name> 
+<servlet-class>Mobiledetails</servlet-class> 
+</servlet> 
+<servlet-mapping> 
+<servlet-name>Mobiledetails</servlet-name> 
+<url-pattern>/Mobiledetails</url-pattern> 
+</servlet-mapping> 
+</web-app>
