@@ -57,3 +57,45 @@ public class Mobiledetails extends HttpServlet {
 //                        |lib------go to MySQL Official Downloads download zip file open copy jar file paste in the lib                
 //                             folder
 // open with: http://localhost:8080/MobileApp/index.html
+
+
+//lab
+// After install : Open XAMPP Control Panel 
+// Start: 
+ 
+// MySQL 
+// Tomcat 
+ 
+// Step2: Create Database 
+// Open browser: http://localhost/phpMyAdmin 
+// Run this SQL: 
+// CREATE TABLE mobile( 
+//                      modelid  VARCHAR(50), 
+//                      price INT, 
+//                      company VARCHAR(50), 
+//                       color VARCHAR(50) 
+// );
+// Step3: Create Project Folder 
+// Go to: 
+// C:\xampp\tomcat\webapps\ 
+// Create folder:MobileApp 
+// Inside create: 
+// MobileApp 
+// ├── index.html 
+// ├── WEB-INF 
+// │    ├── web.xml 
+// │    └── classes 
+// Step4: Download MySQL JDBC Driver 
+// MySQL Connector/J download , select platform independent and download .jar file  
+// i.e,(mysql-connector-j.jar) 
+// Paste into: C:\xampp\tomcat\lib 
+// Restart Tomcat after copying. 
+//     STEP 8 : Compile Servlet 
+// Open CMD: cd C:\xampp\tomcat\webapps\MobileApp\WEB-INF\classes 
+// Compile:  
+// javac -classpath "C:\xampp\tomcat\lib\servlet-api.jar;C:\xampp\tomcat\lib\mysql
+// connector-j.jar" MobileServlet.java 
+// STEP 9 : Restart Tomcat 
+// Stop → Start Tomcat in XAMPP. 
+// STEP 10 : Run Project 
+// Open browser: http://localhost:8080/MobileApp/index.html
